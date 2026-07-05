@@ -36,10 +36,12 @@ BASE_DIR: Path = Path(__file__).resolve().parent.parent
 # ── Derived paths ───────────────────────────────────────────────────
 DATA_DIR: Path = BASE_DIR / "data"
 RAW_DIR: Path = DATA_DIR / "raw"
+PROCESSED_DIR: Path = DATA_DIR / "processed"
 LOG_DIR: Path = BASE_DIR / "logs"
 
 # Raw data sub-directories
 S5P_DIR: Path = RAW_DIR / "sentinel5p"
+PROCESSED_S5P_DIR: Path = PROCESSED_DIR / "sentinel5p"
 ERA5_DIR: Path = RAW_DIR / "era5"
 MODIS_FIRE_DIR: Path = RAW_DIR / "modis_fire"
 VIIRS_FIRE_DIR: Path = RAW_DIR / "viirs_fire"
@@ -96,6 +98,8 @@ ERA5_BANDS: List[str] = [
 ALL_DIRS: List[Path] = [
     DATA_DIR,
     RAW_DIR,
+    PROCESSED_DIR,
+    PROCESSED_S5P_DIR,
     LOG_DIR,
     S5P_DIR,
     HCHO_DIR,
