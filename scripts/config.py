@@ -39,9 +39,15 @@ RAW_DIR: Path = DATA_DIR / "raw"
 PROCESSED_DIR: Path = DATA_DIR / "processed"
 LOG_DIR: Path = BASE_DIR / "logs"
 
+# Processed data sub-directories
+PROCESSED_S5P_DIR: Path = PROCESSED_DIR / "sentinel5p"
+PROCESSED_ERA5_DIR: Path = PROCESSED_DIR / "era5"
+PROCESSED_FIRE_DIR: Path = PROCESSED_DIR / "fire"
+PROCESSED_STATIC_DIR: Path = PROCESSED_DIR / "static"
+PROCESSED_FEATURES_DIR: Path = PROCESSED_DIR / "features"
+
 # Raw data sub-directories
 S5P_DIR: Path = RAW_DIR / "sentinel5p"
-PROCESSED_S5P_DIR: Path = PROCESSED_DIR / "sentinel5p"
 ERA5_DIR: Path = RAW_DIR / "era5"
 MODIS_FIRE_DIR: Path = RAW_DIR / "modis_fire"
 VIIRS_FIRE_DIR: Path = RAW_DIR / "viirs_fire"
@@ -100,6 +106,10 @@ ALL_DIRS: List[Path] = [
     RAW_DIR,
     PROCESSED_DIR,
     PROCESSED_S5P_DIR,
+    PROCESSED_ERA5_DIR,
+    PROCESSED_FIRE_DIR,
+    PROCESSED_STATIC_DIR,
+    PROCESSED_FEATURES_DIR,
     LOG_DIR,
     S5P_DIR,
     HCHO_DIR,

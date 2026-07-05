@@ -83,9 +83,12 @@ def preprocess_variable(var: str, logger: logging.Logger) -> Dict[str, int]:
             failed_count += 1
             
     logger.info("Finished variable %s", var.upper())
-    print(f"processed count: {processed_count}")
-    print(f"failed count: {failed_count}")
-    print(f"skipped count: {skipped_count}")
+    logger.info(
+        "Processed=%d Skipped=%d Failed=%d",
+        processed_count,
+        skipped_count,
+        failed_count,
+    )
     
     return {
         "processed": processed_count,
