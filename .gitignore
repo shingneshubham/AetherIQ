@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Downloaded datasets
+data/raw/
+data/processed/
+
+# Raster files
+*.tif
+*.tiff
+
+# Temp
+*.tmp

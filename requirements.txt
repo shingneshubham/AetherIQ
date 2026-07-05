@@ -1,0 +1,10 @@
+earthengine-api>=1.4.2
+geedim>=2.0.0
+rasterio
+xarray
+rioxarray
+geopandas
+numpy
+pandas
+tqdm
+click
